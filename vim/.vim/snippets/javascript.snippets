@@ -1,0 +1,47 @@
+snippet f 函数定义
+	function ${1}(${2}) {
+		${3}
+	}
+snippet with
+	with(${1}) {
+		${2}
+	}
+snippet if
+	if(${1}) {
+		${2}
+	}
+snippet elif
+	else if(${1}) {
+		${2}
+	}
+snippet el
+	else {${1}
+	}
+snippet for
+	for(${1}) {
+		${2}
+	}
+snippet wh
+	while(${1}) {
+		${2}
+	}
+snippet do
+	do {${2}
+	} while(${1});
+snippet tp
+	typeof${1}
+snippet re
+	return ${1};${2}
+snippet p 常用输出
+	document.writeln(${1});${2}
+snippet al
+	alert(${1});${2}
+snippet t
+	this
+# Node.js相关的补全全部以n_前缀开头
+snippet n_p 命令行输出
+	console.log("${1}");${2}
+snippet n_rq 导入模块
+	require("${1}");${2}
+snippet n_ex 导出模块
+	exports${1}
