@@ -1,0 +1,310 @@
+snippet #!
+	#!/usr/bin/env python
+	# -*- coding: UTF-8 -*-
+snippet coding
+	# -*- coding: UTF-8 -*-
+snippet ifm 作为独立程序运行
+	if __name__ == '__main__':
+		${1}
+snippet im 导入模块
+	import ${1:m_name}
+snippet im_f 导入..从..
+	import ${1} from ${2}
+snippet f_im 从..导入 ..
+	from ${1} import ${2}
+snippet rl 重新载入
+	reload(${1})${2}
+# 字符串
+snippet # 单行注释
+	#  ${1}
+snippet ## 文档字符串、块注释
+	""" ${1}"""
+snippet r 不解释转义字符
+	r'${1}'${2}
+snippet u Unicode字符串
+	u'${1}'${2}
+# 类、函数定义
+snippet cl 类定义
+	class ${1:cl_name}(${2}):
+		${3}
+snippet d 函数定义，不带self
+	def ${1:f_name}(${2}):
+		${3}
+snippet d. 方法定义，带self
+	def ${1:f_name}(self${2}):
+		${3}
+snippet di 初始化方法
+	def __init__(self${1}):
+		${2}
+snippet dd 析构方法
+	def __del__(self${1}):
+		${2}
+snippet la 匿名函数
+	lambda ${1}: ${2}
+# 流程控制
+snippet if
+	if ${1}:
+		${2}
+snippet elif
+	elif ${1}:
+		${2}
+snippet el
+	else:
+		${1}
+snippet for
+	for ${1} in ${2}:
+		${3}
+snippet wh
+	while ${1}:
+		${2}
+# 异常处理
+snippet try 捕获异常
+	try:
+		${1}
+snippet exp 处理异常
+	except ${1}:
+		${2}
+snippet fin
+	finally:
+		${1}
+snippet ras 抛出异常
+	raise ${1}
+snippet as 断言
+	assert ${1}
+# 单个关键字
+snippet T True
+	True${1}
+snippet F False
+	False${1}
+snippet N None
+	None${1}
+snippet gl 引用全局变量
+	global${1}
+snippet co 继续循环
+	continue${1}
+snippet br 中断
+	break${1}
+snippet re 返回
+	return ${1}
+snippet yi 返回但不结束
+	yield${1}
+snippet ps 空语句
+	pass${1}
+snippet s 相当于this
+	self${1}
+snippet p 不带括号
+	print ${1}
+snippet p. 带括号
+	print(${1})${2}
+snippet i 获取输入
+	raw_input("${1}")${2}
+snippet . __name__
+	__${1:init}__${2}
+#
+# 标准库常用函数。为防止与常规补全重名，常用函数全部以f_前缀开头
+# list
+snippet f_s 排序
+	sort()${1}
+snippet f_p 移除
+	pop(${1})${2}
+snippet f_id 获取参数在列表中的位置
+	index(${1})${2}
+snippet f_ap 附加
+	append(${1})${2}
+snippet f_in 插入
+	insert(${1}, ${2})${3}
+snippet f_rm 显式移除
+	remove(${1})${2}
+snippet f_ex 合并
+	extend(${1})${2}
+snippet f_rv 倒置
+	reverse()${1}
+snippet f_en 同时循环和迭代
+	enumerate(${1})${2}
+# tuple
+snippet f_l 返回长度
+	len(${1})${2}
+snippet f_mx 返回最大值
+	max(${1})${2}
+snippet f_mi 返回最小值
+	min(${1})${2}
+snippet f_sm 返回序列各元素值的和
+	sum(${1})${2}
+snippet f_ay 是否有元素值为True
+	any(${1})${2}
+snippet f_al 是否全部元素值为True
+	all(${1})${2}
+snippet f_zp 返回N个元组的迭代器
+	zip(${1})${2}
+# dict
+snippet f_cls 清空
+	clear()${1}
+snippet f_cp 复制
+	copy()${1}
+snippet f_ud 更新
+	update(${1})${2}
+snippet f_gt 返回字典元素值，没有则返回默认值
+	get(${1})${2}
+snippet f_sd 返回字典元素值，没有则创建为默认值，并返回
+	setdefault(${1}, ${2})${3}
+snippet f_kys 所有键
+	keys()${1}
+snippet f_vls 所有值
+	values()${1}
+snippet f_its 所有键值对
+	items()${1}
+snippet f_hsk 是否包含指定键名
+	has_key(${1})${2}
+# str
+snippet f_rs 去掉换行符
+	rstrip()${1}
+snippet f_j 连接
+	join(${1})${2}
+snippet f_sp 分割
+	split(${1})${2}
+snippet f_up 全大写
+	upper()${1}
+snippet f_lw 全小写
+	lower()${1}
+snippet f_cap 第一个单词的首字母大写
+	capitalize()${1}
+snippet f_ti 每个单词首字母都大写
+	title()${1}
+snippet f_sw 大小写翻转
+	swapcase()${1}
+snippet f_fi 寻找..首次出现的下标值
+	find(${1})${2}
+snippet f_rp 替换子串
+	replace(${1}, ${2})${3}
+snippet f_co 统计..出现的次数
+	count(${1})${2}
+snippet f_isal 测试是否只包含字母
+	isalpha()${1}
+snippet f_isdi 测试是否只包含数字
+	isdigit()${1}
+snippet f_isan 测试是否只包含字母和数字
+	isalnum()${1}
+snippet f_issp 测试是否全为空白字符
+	isspace()${1}
+snippet f_isti 测试是否每个单词的首字母都大写
+	istitle()${1}
+snippet f_isup 测试是否为大写
+	isupper()${1}
+snippet f_islw 测试是否为小写
+	islower()${1}
+snippet f_stw 测试是否以..开头
+	startswith(${1})${2}
+snippet f_edw 测试是否以..结尾
+	endswith(${1})${2}
+# file
+snippet f_op 打开文件
+	open(${1})${2}
+snippet f_rd 读入文件
+	read()${1}
+snippet f_wr 写入文件
+	write(${1})${2}
+snippet f_cl 关闭文件
+	close()${1}
+snippet f_rdl 以行为单位读入
+	readlines(${1})${2}
+snippet f_wrl 以行为单位写入
+	writelines(${1})${2}
+# other
+snippet f_a 返回绝对值
+	abs(${1})${2}
+snippet f_ro 将浮点数精确到某位
+	round(${1}, ${2})${3}
+snippet f_di 返回两参数相除得到的整数和余数
+	divmod(${1}, ${2})${3}
+snippet f_bo 测试布尔值
+	bool(${1})${2}
+snippet f_rg 生成连续数值
+	range(${1})${2}
+#
+# 常见异常。为防止与常规补全重名，异常全部以e_前缀开头
+snippet e_as assert断言失败
+	AssertionError${1}
+snippet e_at 试图访问不存在的属性
+	AttributeError${1}
+snippet e_io 输入/输出异常
+	IOError${1}
+snippet e_eof 遇到文件结尾异常
+	EOFError${1}
+snippet e_im 导入模块/包异常
+	ImportError${1}
+snippet e_idt 语法错误
+	IndentationError${1}
+snippet e_idx 下标索引越界
+	IndexError${1}
+snippet e_ky 试图访问不存在的键
+	KeyError${1}
+snippet e_kbd Ctrl+C被按下
+	KeyboardInterrupt${1}
+snippet e_na 使用一个尚未赋值的变量
+	NameError${1}
+snippet e_tb 语句块缩进异常
+	TabError${1}
+snippet e_sy 代码非法
+	SyntaxError${1}
+snippet e_tp 对象类型不符
+	TypeError${1}
+snippet e_ubl 试图访问一个还未设置的局部变量
+	UnboundLocalError${1}
+snippet e_val 传入了调用者不期望的值
+	ValueError${1}
+snippet e_zro 除数为零异常
+	ZeroDivisionError${1}
+#
+# 正则表达式。为防止与常规补全重名，正则方法全部以r_前缀开头
+snippet r_mh 匹配
+	re.match(r'${1}', ${2})${3}
+snippet r_sh 查找
+	re.search(r'${1}', ${2})${3}
+snippet r_fa 查找所有
+	re.findall(r'${1}', ${2})${3}
+snippet r_sb 替换
+	re.sub(r'${1}', ${2}, ${3})${4}
+snippet r_sp 分割
+	re.split(r'${1}', ${2})${3}
+snippet r_cm 编译
+	re.compile(r${1}, ${2})${3}
+#
+# Django相关。为防止与常规补全重名，除两个例外情况外，所有Django补全全部以d_前缀开头
+snippet clm
+	class Meta:
+		ordering = ['${1}']${2}
+snippet du
+	def __unicode__(self):
+		return self.${1}
+snippet d_in 整数
+	IntegerField()${2}
+snippet d_ch 字符
+	CharField(${1})${2}
+snippet d_tx 文本
+	TextField()${1}
+snippet d_d 时间1
+	DateField()${1}
+snippet d_dt 时间2
+	DateTimeField(${1})${2}
+snippet d_im 图像
+	ImageField(${1})${2}
+snippet d_ur 链接
+	URLField()${1}
+snippet d_em 邮箱
+	EmailField()${1}
+snippet d_fk 外键
+	ForeignKey(${1})${2}
+snippet d_mtm 多对多
+	ManyToManyField(${1})${2}
+snippet d_ml 最大值
+	max_length=${1}
+snippet d_ut 上传位置
+	upload_to=${1}
+snippet d_bl 留空
+	blank=${1}
+snippet d_rtr 模板渲染
+	render_to_response('${1}')${2}
+snippet d_goo 404错误
+	get_object_or_404(${1})${2}
+snippet d_hrr
+	HttpResponseRedirect(${1})${2}

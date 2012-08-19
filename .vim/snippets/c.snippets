@@ -1,0 +1,106 @@
+snippet # 单行注释
+	//  ${1}
+snippet ## 多行注释
+	/* ${1} */
+snippet main 主函数
+	int main(int argc, char **argv)
+	{
+		${1}
+
+		return 0;
+	}
+snippet f 函数定义
+	${2:void} ${1:f_name}(${3})
+	{
+		${4}
+	}
+snippet fd 函数声明
+	${2:void} ${1:f_name}(${3});${4}
+# 预处理
+snippet in 包含系统头文件
+	#include <${1}>${2}
+snippet in. 包含自定义头文件
+	#include "${1}"${2}
+snippet def 宏定义
+	#define 
+snippet ifndef 防止头文件重复包含
+	#ifndef ${1:HEAD_FILE_H}
+	#define $1
+	${2}
+	#endif
+# 流程控制
+snippet if
+	if(${1}) {
+		${2}
+	}
+snippet elif
+	else if(${1}) {
+		${2}
+	}
+snippet el
+	else {
+		${1}
+	}
+snippet do
+	do {
+		${2}
+	} while(${1});
+snippet wh
+	while(${1}) {
+		${2}
+	}
+snippet for
+	for(${1}) {
+		${2}
+	}
+snippet for. 常用版
+	for(${1}; ${2}; ${3}) {
+		${4}
+	}
+snippet sw
+	switch(${1}) {
+		${2}
+	}
+snippet cs
+	case ${1}:
+		${2}
+# 复合类型
+snippet tp 类型定义
+	typedef 
+snippet str 结构体定义
+	struct ${1:st_name} {
+		${2}
+	};
+snippet tps
+	typedef struct {
+		${1}
+	} ${2:st_name};${3}
+snippet em 枚举定义
+	enum ${1:e_name}{${2}};${3}
+snippet tpe
+	typedef enum {
+		${1}
+	} ${2:e_name};${3}
+# 单个关键字
+snippet p 输出
+	printf("${1}\n"${2});${3}
+snippet s 输入
+	scanf("${1}", ${2});${3}
+snippet fpr
+	fprintf(${1:stdout}, "${2:%s}\n"${3});${4}
+snippet ex 声明变量
+	extern 
+snippet con 常量声明
+	const 
+snippet un
+	unsigned 
+snippet re
+	return 
+snippet st
+	static 
+snippet co
+	continue;
+snippet br
+	break;
+snippet .
+	->
