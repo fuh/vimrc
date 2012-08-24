@@ -1,7 +1,7 @@
-" -----------------     Author: may
-" -----------------     Email: askfuhu@gmail.com
-" -----------------     WebSite: http://cutemay.me
-" -----------------     Date: 2012-05-01
+" -----------------  Author: may
+" -----------------   Email: askfuhu@gmail.com
+" ----------------- WebSite: http://cutemay.me
+" -----------------    Date: 2012-05-01
 
 
 " Ctrl + H                   --光标移当前行行首
