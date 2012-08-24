@@ -268,9 +268,9 @@ let g:vimwiki_camel_case = 0
 let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code,red,center,left,right,h2,h4,h5,h6,pre,script,style'
 
 let g:vimwiki_list = [{
-\ 'path': '/host/Apps/Gvim/mysite/wiki',
-\ 'path_html': '/host/Apps/Gvim/mysite/html/',
-\ 'html_header': '/host/Apps/Gvim/mysite/template/header.html',
-\ 'html_footer': '/host/Apps/Gvim/mysite/template/footer.html',
+\ 'path': '/media/DATA/mysite/wiki',
+\ 'path_html': '/media/DATA/mysite/html/',
+\ 'html_header': '/media/DATA/mysite/template/header.html',
+\ 'html_footer': '/media/DATA/mysite/template/footer.html',
 \ 'auto_export': 1,
 \ 'nested_syntaxes': {'C': 'c', 'Lisp': 'lisp', 'Python': 'python', 'JS': 'javascript', 'Gas': 'gas', 'Bash': 'sh', 'SQL': 'sql', 'HTML': 'html', 'CSS': 'css', 'Vim': 'vim', 'Make': 'make'},}]
