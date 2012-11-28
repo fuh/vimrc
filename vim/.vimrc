@@ -1,7 +1,8 @@
-" -----------------   Author: may
+" -----------------   Author: Misya
 " -----------------    Email: askfuhu@gmail.com
-" -----------------  WebSite: http://cutemay.me
-" -----------------     Date: 2012-08-24
+" -----------------  WebSite: http://misya.me
+" -----------------     Date: 2012-11-28
+
 
 
 " Ctrl + H                   --光标移当前行行首       [插入模式]
@@ -13,9 +14,11 @@
 " Ctrl + ]                   --转到函数定义
 " Ctrl + T                   --返回调用函数
 " Ctrl + E                   --一步加载语法模板和作者、时间信息
+" ESC  + H                   --Normal模式下开启Devhelp查询功能
 
 " <C-P>                      --单词补全
 " <C-X><C-L>                 --整行补全
+" <C-X><C-O>                 --全能补全
 " Tab键                      --插入模式下语法结构补全 [snipMate插件]
 " Shift + Insert             --向Vim中粘贴从别处复制的内容
 
@@ -137,10 +140,6 @@ set fileencodings=utf-8,gbk,cp936,latin-1
 
 :inoremap ] <c-r>=ClosePair(']')<CR>
 
-":inoremap < <><ESC>i
-
-":inoremap > <c-r>=ClosePair('>')<CR>
-
 :inoremap " ""<ESC>i
 
 :inoremap ' ''<ESC>i
@@ -156,7 +155,14 @@ function ClosePair(char)
 endf
 
 
-" MiniBufExplorer 多个文件切换 可使用鼠标双击相应文件名进行切换
+" ESC + H             Normal模式下开启Devhelp查询功能
+function! DevHelpCurrentWord()
+  let word = expand("<cword>")
+  exe "!devhelp -s " . word . " &"
+endfunction
+nmap <esc>h :call DevHelpCurrentWord()<CR>
+
+" MiniBufExplorer     多个文件切换 可使用鼠标双击相应文件名进行切换
 let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplMapWindowNavArrows=1
 let g:miniBufExplMapCTabSwitchBufs=1
@@ -171,15 +177,15 @@ let Tlist_File_Fold_Auto_Close=1  " 自动折叠
 " TxtBrowser 高亮TXT文本文件
 au BufRead,BufNewFile *.txt setlocal ft=txt
 
-" :LoadTemplate 根据文件后缀自动加载模板
-let g:template_path='/home/may/.vim/template/'
+" :LoadTemplate 根据文件类型自动加载模板
+let g:template_path='~/.vim/template/'
 
 " snipMate            Tab智能补全
-let g:snips_author='may'
+let g:snips_author='Misya'
 " :AuthorInfoDetect   自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合
-let g:vimrc_author='may'
+let g:vimrc_author='Misya'
 let g:vimrc_email='askfuhu@gmail.com'
-let g:vimrc_homepage='http://cutemay.me'
+let g:vimrc_homepage='http://misya.me'
 
 " Ctrl + H            将光标移到当前行的行首
 imap <c-h> <ESC>I
@@ -232,7 +238,7 @@ func! RunCode()
             exec "! ./%<"
         elseif &filetype == "java"
             exec "!java %<"
-	elseif &filetype == "sh"
+    elseif &filetype == "sh"
             exec "!bash %<.sh"
         elseif &filetype == "python"
             exec "!python %<.py"
