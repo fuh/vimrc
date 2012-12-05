@@ -1,0 +1,92 @@
+snippet # 单行注释
+	//  ${1}
+snippet ## 多行注释
+	/* ${1} */
+snippet cl 类定义
+	${2}class ${1:cl_name} {
+		${3}
+	}
+snippet f 方法定义
+	${2:public} ${1:f_name}(${3}) {
+		${4}
+	}
+snippet main 主函数
+	public static void main(String[] args) {
+		${1}
+	}
+snippet if
+	if(${1}) {
+		${2}
+	}
+snippet elif
+	else if(${1}) {
+		${2}
+	}
+snippet el
+	else {
+		${1}
+	}
+snippet wh
+	while(${1}) {
+		${2}
+	}
+snippet for
+	for(${1}) {
+		${2}
+	}
+snippet for. 常用版
+	for(${1}; ${2}; ${3}) {
+		${4}
+	}
+snippet sw
+	switch(${1}) {
+		${2}
+	}
+snippet cs
+	case ${1}:
+		${2}
+snippet de
+	default:
+		${1}
+snippet try
+	try {
+		${1}
+	}
+snippet ca
+	catch(${1}) {
+		${2}
+	}
+snippet fin
+	finally {
+		${1}
+	}
+snippet pa
+	package 
+snippet im
+	import 
+snippet pu
+	public 
+snippet po
+	protected 
+snippet pr
+	private 
+snippet st
+	static 
+snippet fi
+	final 
+snippet ab
+	abstract 
+snippet re
+	return 
+snippet co
+	continue;
+snippet br
+	break;
+snippet S
+	String 
+snippet bo
+	boolean 
+snippet p
+	System.out.println(${1});${2}
+snippet th
+	throw 
