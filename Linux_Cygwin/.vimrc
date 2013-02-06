@@ -1,4 +1,4 @@
-" -----------------   Author: Misya
+" -----------------   Author: Miles
 " -----------------    Email: askfuhu@gmail.com
 " -----------------  WebSite: http://misya.me
 " -----------------     Date: 2012-11-28
@@ -181,9 +181,9 @@ au BufRead,BufNewFile *.txt setlocal ft=txt
 let g:template_path='~/.vim/template/'
 
 " snipMate            Tab智能补全
-let g:snips_author='Misya'
+let g:snips_author='Miles'
 " :AuthorInfoDetect   自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合
-let g:vimrc_author='Misya'
+let g:vimrc_author='Miles'
 let g:vimrc_email='askfuhu@gmail.com'
 let g:vimrc_homepage='http://misya.me'
 
