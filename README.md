@@ -36,8 +36,8 @@ emerge gvim                                # Gentoo
 
 ### Screenshots
 
-![Completions](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/completions.gif)
-![Snippets](https://raw.github.com/humiaozuzu/dot-vimrc/master/screenshots/snippets.gif)
+![Completions](https://raw.github.com/fuhu/.vimrc/master/screenshots/completions.gif)
+![Snippets](https://raw.github.com/fuhu/.vimrc/master/screenshots/snippets.gif)
 
 #### Sometimes we need to jump to previous positions to copy/paste or do some fixes:
 ## Fast navigation
