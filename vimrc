@@ -45,8 +45,6 @@ set showcmd                                                       " show typed c
 set title                                                         " show file in titlebar
 set laststatus=2                                                  " use 2 lines for the status bar
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
-set matchpairs+=<:>                                               " specially for html
-" set relativenumber
 
 " Default Indentation
 set autoindent
