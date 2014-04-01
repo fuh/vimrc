@@ -1,4 +1,4 @@
-Hu Fu's Vim config
+hfu's Vim config
 ==================
 
 I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
@@ -195,8 +195,6 @@ Clone in Mac
         :BundleInstall
 
 Thst's it!
-
-For installation on Windows, please refer to this post: http://blog.yoxyue.com/post/gvim-on-win7 (Thanks to [yoxyue](https://github.com/yoxyue))
 
 ## How to manage this vimrc?
 

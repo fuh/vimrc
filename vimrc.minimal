@@ -14,9 +14,9 @@ set autoindent
 " use intelligent indentation for C
 set smartindent
 " configure tabwidth and insert spaces instead of tabs
-set tabstop=4 " tab width is 4 spaces
-set shiftwidth=4 " indent also with 4 spaces
-set expandtab " expand tabs to spaces
+set tabstop=8           " tab width is 8 spaces
+set shiftwidth=8        " indent also with 8 spaces
+set expandtab           " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 " turn syntax highlighting on
@@ -24,7 +24,7 @@ set t_Co=256
 syntax on
 " colorscheme wombat256
 " turn line numbers on
-set number
+"set number
 " highlight matching braces
 set showmatch
 " intelligent comments
@@ -34,9 +34,6 @@ set comments=sl:/*,mb:\ *,elx:\ */
 " This offers intelligent C++ completion when typing ‘.’ ‘->’ or <C-o>
 " Load standard tag files
 set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
  
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
 let g:DoxygenToolkit_authorName="John Doe <john@doe.com>"
@@ -47,18 +44,6 @@ let g:DoxygenToolkit_authorName="John Doe <john@doe.com>"
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again
 imap <F2> <ESC>:w<CR>i
-" switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-" recreate tags file with F5
-map <F5> :!ctags -R –c++-kinds=+p –fields=+iaS –extra=+q .<CR>
-" create doxygen comment
-map <F6> :Dox<CR>
-" build using makeprg with <F7>
-map <F7> :make<CR>
-" build using makeprg with <S-F7>
-map <S-F7> :make clean all<CR>
-" goto definition with F12
-map <F12> <C-]>
 " in diff mode we use the spell check keys for merging
 if &diff
     " diff settings
