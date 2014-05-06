@@ -1,4 +1,3 @@
-" VIM Configuration File
 " Description: Optimized for C/C++ development, but useful also for other things.
 " Author: Hu Fu <askfuhu@gmail.com>
 "
@@ -30,16 +29,19 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
  
-" Install OmniCppComplete like described on http://vim.wikia.com/wiki/C++_code_completion
-" This offers intelligent C++ completion when typing ‘.’ ‘->’ or <C-o>
-" Load standard tag files
-set tags+=~/.vim/tags/cpp
+
+" Enable omni completion.
+autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType c setlocal omnifunc=ccomplete#Complete
+if !exists('g:neocomplcache_omni_patterns')
+   let g:neocomplcache_omni_patterns = {}
+endif
  
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
-let g:DoxygenToolkit_authorName="John Doe <john@doe.com>"
+let g:DoxygenToolkit_authorName="Hu Fu <askfuhu@gmail.com>"
  
 " Enhanced keyboard mappings
-"
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save, enters insert again

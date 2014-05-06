@@ -1,6 +1,3 @@
-hfu's Vim config
-==================
-
 I use `vundle` to manage my plugins, which makes my `.vim` directory clean and tidy. If you are new to vim, the following two posts
 
 * [Vim Introduction and Tutorial](http://blog.interlinked.org/tutorials/vim_tutorial.html)
@@ -30,8 +27,8 @@ Compile Vim with `--enable-pythoninterp` and `--enable-rubyinterp` to enable pow
 
 ``` bash
 brew install macvim --override-system-vim  # OS X
-yum install gvim                           # Fedora
-emerge gvim                                # Gentoo
+yum install vim                            # Fedora
+emerge vim                                 # Gentoo
 ```
 
 ### Screenshots
@@ -95,7 +92,7 @@ emerge gvim                                # Gentoo
 ### Dependencie
 
 ```bash
-yum install  ctags                   # Fedora
+yum install ctags                    # Fedora
 emerge ctags                         # Gentoo
 brew install ack ctags               # OS X
 ```
