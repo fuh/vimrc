@@ -6,29 +6,38 @@
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
+
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
+
 " use indentation of previous line
 set autoindent
+
 " use intelligent indentation for C
 set smartindent
+
 " configure tabwidth and insert spaces instead of tabs
+set expandtab           " expand tabs to spaces
 set tabstop=8           " tab width is 8 spaces
 set shiftwidth=8        " indent also with 8 spaces
-set expandtab           " expand tabs to spaces
+
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
+
 " turn syntax highlighting on
 set t_Co=256
 syntax on
+
 " colorscheme wombat256
+
 " turn line numbers on
 "set number
+
 " highlight matching braces
 set showmatch
+
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
- 
 
 " Enable omni completion.
 autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -41,24 +50,3 @@ endif
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
 let g:DoxygenToolkit_authorName="Hu Fu <askfuhu@gmail.com>"
  
-" Enhanced keyboard mappings
-" in normal mode F2 will save the file
-nmap <F2> :w<CR>
-" in insert mode F2 will exit insert, save, enters insert again
-imap <F2> <ESC>:w<CR>i
-" in diff mode we use the spell check keys for merging
-if &diff
-    " diff settings
-    map <M-Down> ]c
-    map <M-Up> [c
-    map <M-Left> do
-    map <M-Right> dp
-    map <F9> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
-else
-    " spell settings
-    :setlocal spell spelllang=en
-    " set the spellfile - folders must exist
-    set spellfile=~/.vim/spellfile.add
-    map <M-Down> ]s
-    map <M-Up> [s
-endif
