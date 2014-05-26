@@ -16,6 +16,12 @@ set autoindent
 " use intelligent indentation for C
 set smartindent
 
+" More powerful backspacing
+set backspace=indent,eol,start
+
+" show file in titlebar
+set title
+
 " configure tabwidth and insert spaces instead of tabs
 set expandtab           " expand tabs to spaces
 set tabstop=8           " tab width is 8 spaces
@@ -24,11 +30,17 @@ set shiftwidth=8        " indent also with 8 spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 
+" enable filetype dectection and ft specific plugin/indent
+filetype plugin indent on
+
 " turn syntax highlighting on
 set t_Co=256
 syntax on
 
-" colorscheme wombat256
+" search
+set incsearch
+set ignorecase
+set smartcase
 
 " turn line numbers on
 "set number
