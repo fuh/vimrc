@@ -8,37 +8,30 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-"------------------
 " Code Completions
-"------------------
 Bundle 'Shougo/neocomplcache'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
+
 " snippets
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
-"------ snipmate dependencies -------
+" snipmate dependencies
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 
-"-----------------
 " Fast navigation
-"-----------------
-Bundle 'tsaleh/vim-matchit'
+Bundle 'jwhitley/vim-matchit'
 Bundle 'Lokaltog/vim-easymotion'
 
-"--------------
 " Fast editing
-"--------------
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
-"--------------
 " IDE features
-"--------------
 Bundle 'scrooloose/nerdtree'
 Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
@@ -49,37 +42,25 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 
-"-------------
 " Other Utils
-"-------------
 " Bundle 'humiaozuzu/fcitx-status'
 Bundle 'nvie/vim-togglemouse'
 
-"----------------------------------------
 " Syntax/Indent for language enhancement
-"----------------------------------------
-"------- markup language -------
+" markup language
 Bundle 'tpope/vim-markdown'
 " Bundle 'timcharper/textile.vim'
-
-"------- Go ----------
+" Golang
 Bundle 'jnwhiteh/vim-golang'
 
-"------- FPs ------
+" FPs
 Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'wlangstroth/vim-racket'
 " Bundle 'vim-scripts/VimClojure'
 " Bundle 'rosstimson/scala-vim-support'
 
-"--------------
 " Color Schemes
-"--------------
-Bundle 'rickharris/vim-blackboard'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'rickharris/vim-monokai'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-distinguished'
+Bundle 'tomasr/molokai'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'fisadev/fisa-vim-colorscheme'
 
 filetype plugin indent on     " required!

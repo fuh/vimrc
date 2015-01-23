@@ -9,12 +9,11 @@ filetype plugin indent on
 " enable syntax hightlight and completion
 syntax on
 
-"--------
 " Vim UI
 "--------
 " color scheme
-set background=dark
-color solarized
+"set background=dark
+color molokai
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -49,13 +48,13 @@ set directory=~/tmp,/tmp                                          " move swp fil
 
 " Default Indentation
 set autoindent
+set expandtab       " expand tab to space
 set smartindent     " indent when
 set tabstop=4       " tab width
 set softtabstop=4   " backspace
 set shiftwidth=4    " indent width
 " set textwidth=79
 " set smarttab
-set expandtab       " expand tab to space
 
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 
@@ -175,7 +174,6 @@ nmap  <D-/> :
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
 
-"------------------
 " Useful Functions
 "------------------
 " easier navigation between split windows
