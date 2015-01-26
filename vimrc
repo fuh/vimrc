@@ -50,9 +50,9 @@ set directory=~/tmp,/tmp                                          " move swp fil
 set autoindent
 set expandtab       " expand tab to space
 set smartindent     " indent when
-set tabstop=4       " tab width
-set softtabstop=4   " backspace
-set shiftwidth=4    " indent width
+set tabstop=8       " tab width
+set softtabstop=8   " backspace
+set shiftwidth=8    " indent width
 " set textwidth=79
 " set smarttab
 
