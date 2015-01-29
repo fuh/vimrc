@@ -144,8 +144,6 @@ YAML         | js-yaml       | `npm install -g js-yaml`
    - markdown
    - textile
 - FPs
-   - racket
-   - clojure
    - scale
 
 ## Themes
@@ -179,21 +177,21 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 3. Setup `Vundle`:
 
-        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+        git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 4. Install bundles. Launch vim(ignore the errors and they will disappear after installing needed plugins)and run:
 
-        :BundleInstall
+        :PluginInstall
 
 Thst's it!
 
 ## How to manage this vimrc?
 
-All plugins are listed in file `bundles.vim` with detailed comments, just add plugins as you like.
+All plugins are listed in file `vundles.vim` with detailed comments, just add plugins as you like.
 
-1. `:BundleClean` to clean up unused plugins
-2. `:BundleInstall` to install newly added plugins
-3. `:BundleInstall!` to upgrade all plugins
+1. `:PluginClean` to clean up unused plugins
+2. `:PluginInstall` to install newly added plugins
+3. `:PluginInstall!` to upgrade all plugins
 
 Other configurations are also well organized in vimrc.
 
