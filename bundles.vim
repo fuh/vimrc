@@ -6,61 +6,61 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Code Completions
-Bundle 'Shougo/neocomplcache'
-Bundle 'Raimondi/delimitMate'
-Bundle 'ervandew/supertab'
+Plugin 'Shougo/neocomplcache'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
 
 " snippets
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 " snipmate dependencies
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
 
 " Fast navigation
-Bundle 'jwhitley/vim-matchit'
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'jwhitley/vim-matchit'
+Plugin 'Lokaltog/vim-easymotion'
 
 " Fast editing
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'sjl/gundo.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'sjl/gundo.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " IDE features
-Bundle 'scrooloose/nerdtree'
-Bundle 'humiaozuzu/TabBar'
-Bundle 'majutsushi/tagbar'
-Bundle 'mileszs/ack.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/syntastic'
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'scrooloose/nerdtree'
+Plugin 'humiaozuzu/TabBar'
+Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'scrooloose/syntastic'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Other Utils
-" Bundle 'humiaozuzu/fcitx-status'
-Bundle 'nvie/vim-togglemouse'
+" Plugin 'humiaozuzu/fcitx-status'
+Plugin 'nvie/vim-togglemouse'
 
 " Syntax/Indent for language enhancement
 " markup language
-Bundle 'tpope/vim-markdown'
-" Bundle 'timcharper/textile.vim'
+Plugin 'tpope/vim-markdown'
+" Plugin 'timcharper/textile.vim'
 " Golang
-Bundle 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 
 " FPs
-Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'wlangstroth/vim-racket'
-" Bundle 'vim-scripts/VimClojure'
-" Bundle 'rosstimson/scala-vim-support'
+Plugin 'kien/rainbow_parentheses.vim'
+" Plugin 'wlangstroth/vim-racket'
+" Plugin 'vim-scripts/VimClojure'
+" Plugin 'rosstimson/scala-vim-support'
 
 " Color Schemes
-Bundle 'tomasr/molokai'
-Bundle 'chriskempson/vim-tomorrow-theme'
+Plugin 'tomasr/molokai'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 filetype plugin indent on     " required!
