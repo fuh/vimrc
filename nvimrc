@@ -1,5 +1,7 @@
 " vim: set et fenc=utf-8 ft=vim sts=4 sw=4 ts=8 tw=80 :
 
+set shell=bash                          " Supports the fish shell
+
 call plug#begin('~/.nvim/plugged')
 
 Plug 'junegunn/goyo.vim'                " Distraction-free writing.
