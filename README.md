@@ -172,7 +172,7 @@ YAML         | js-yaml       | `npm install -g js-yaml`
 
 2. Clone and install this repo:
 
-        git clone git://github.com/fuhu/.vimrc.git ~/.vim
+        git clone https://github.com/hfucn/vimrc.git ~/.vim
         ln -s ~/.vim/vimrc ~/.vimrc
 
 3. Setup `Vundle`:

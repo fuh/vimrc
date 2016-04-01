@@ -60,6 +60,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 " Plugin 'rosstimson/scala-vim-support'
 
 " Color Schemes
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/vim-tomorrow-theme'
 

@@ -12,8 +12,8 @@ syntax on
 " Vim UI
 "--------
 " color scheme
-"set background=dark
-color molokai
+set background=dark
+colorscheme solarized
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
