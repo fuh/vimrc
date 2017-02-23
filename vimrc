@@ -13,7 +13,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
