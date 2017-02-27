@@ -214,12 +214,22 @@ nnoremap ; :
 
 " for macvim
 if has("gui_running")
-    set go=aAce  " remove toolbar
-    "set transparency=30
+    "set go=aAce  " remove toolbar
+    set transparency=2
+    ""不全屏为set nofu
+    set nofu
     set guifont=Monaco:h13
     set showtabline=2
     set columns=140
     set lines=40
+    set guioptions=mr       "c去掉"
+    set guioptions=         " 隐藏全部
+    set guioptions+=m       " 隐藏菜单栏
+    set guioptions-=T       " 隐藏工具栏
+    set guioptions-=L       " 隐藏左侧滚动条
+    "set guioptions+=r      " 隐藏右侧滚动条
+    "set guioptions-=b      " 隐藏底部滚动条
+    "set showtabline-=0     " 隐藏Tab栏
     noremap <D-M-Left> :tabprevious<cr>
     noremap <D-M-Right> :tabnext<cr>
     map <D-1> 1gt
